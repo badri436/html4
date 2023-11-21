@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #p1{
+            height: 50vh;
+            width: 30vw;
+            background-color: beige;
+            transition: 3s;
+            /* animation-name: example; */
+            animation-duration: 5s;
+            font-size: 50px;
+            animation-iteration-count: infinite;
+        }
+
+        @media screen and (max-width:600px) {
+            #p1{
+                font-size: 20px;
+                background-color: blue;
+            }
+
+            
+        }
+        #p1 p {
+                       animation-name: example;
+                       animation-duration: 5s;
+                       animation-iteration-count: infinite;
+        }
+
+        #p1 p:hover {
+            text-shadow: 3px 4px 4px blue;
+            cursor: pointer;
+        }
+
+        @keyframes example {
+            0%{
+                /* background-color: black; */
+                /* transform: translate(100px,100px); */
+                opacity: 1;
+                color: brown;
+            }
+            50%{
+                /* background-color: blue;
+                height: 20vh;
+                transform: skew(50deg);
+                border-radius: 50%; */
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+                color: blueviolet;
+                /* background-color: yellow;
+                border-radius: 50%;
+                transform: rotate(30deg);
+                transform: translateX(500px); */
+            }
+        }
+        
+        /* #p1:hover{
+            transform: skew(30deg) !important;
+            transform: rotate(60deg);
+        } */
+    </style>
+</head>
+
+<body>
+    <div id="p1">
+        <p>Hello this is example of text shadow</p>
+    </div>
+</body>
+</html>

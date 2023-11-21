@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="day3.css"/>
+    <style>
+        /* Element selector */
+        p{
+            color: blue;
+        }
+        /* Id Selector */
+        #ptag1{
+            font-size: 70px;
+        }
+
+        /* Class Selector */
+        .ptag2{
+            color: yellow;
+        }
+        /* Psesudo class */
+        .ptag2:hover{
+            color: blue;
+        }
+
+        /* Pseudo element */
+        .ptag2::first-letter{
+            font-size: 50px;
+        }
+        .ptag2::first-line{
+            color: brown;
+        }
+        #bg1{
+            /* background-color: blue; */
+            width: 50vw;
+            height: 20vh;
+            background-color: beige;
+            
+            overflow: scroll;
+        }
+        #bg1 p{
+            font-size: 50px;
+            background-image: url("Screenshot\ 2023-10-22\ 173121.png");
+            background-size: 150px;
+            background-repeat: no-repeat;
+            background-position: top right;
+            font-style: oblique;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <p style="font-size: 50px;">Hello</p>
+        <p id="ptag1">This is second p tag</p>
+        <p class="ptag2">This is use of class selector</p>
+        <p class="ptag2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, debitis. Cupiditate molestiae rem modi suscipit? Eaque exercitationem culpa placeat quam libero magni ea id odit!</p>
+
+        <div id="bg1">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore asperiores, aliquam molestias tenetur beatae illum cum quam et eaque modi animi in minus veniam nulla. Expedita ipsum labore ex modi fuga. Voluptatem obcaecati quia aperiam id illum non perferendis voluptatum eos reiciendis hic, soluta consequatur! Nemo, voluptatem est? Veritatis itaque possimus voluptas non voluptatem expedita hic illo quae minus dignissimos totam, laborum molestias nihil quod adipisci laudantium laboriosam quisquam mollitia sit distinctio, maxime alias. Vero a optio, similique harum placeat consequuntur perspiciatis quis minus esse, cupiditate aspernatur? Non, maiores officiis? Odio, ipsum nulla nostrum sunt quibusdam facilis architecto voluptates corrupti?</p>
+        </div>
+    </div>
+</body>
+</html>
