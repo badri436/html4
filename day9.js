@@ -38,6 +38,7 @@ for (let o in obj) {
 
 console.log("21"===21)
 let str = "This is javascript class"
+// String Methods
 let strToArray=str.split(" ")
 console.log(strToArray)
 console.log(str.length)
